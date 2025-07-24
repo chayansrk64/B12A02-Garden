@@ -156,6 +156,70 @@ nav ul li:first-child{
     font-size: 3rem;
 }
 
+/* latest-deals-section */
+.latest-deals h3{
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+.latest-deals p{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.latest-deals-card{
+    position: relative;
+}
+.latest-deals-card img{
+    width: 100%;
+    border-radius: 1.2rem;
+      filter: brightness(50%);
+}
+.latest-deals-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.latest-deals-content h4{
+    font-size: 3rem;
+    color: white;
+    margin-bottom: .5rem;
+}
+.latest-deals-content h5{
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: .5rem;
+}
+.latest-deals-card a{
+    color: white;
+}
+.latest-deals-card:nth-child(2) a{
+    font-size: 1.2rem;
+}
+
+.latest-deals-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    grid-template-areas: 
+    "bloom zabo zabo"
+    "ana zabo zabo";
+   
+}
+.card-1{
+    grid-area: bloom;
+}
+.card-2{
+    grid-area: zabo;
+}
+.card-3{
+    grid-area: ana;
+}
+
+
+
+
 
 
 
@@ -245,6 +309,27 @@ nav ul li:first-child{
 .flower-plants-container div h3{
     font-size: 2rem;
 }
+
+
+/* latest deals */
+.latest-deals-container{
+    grid-template-columns: 1fr;
+     grid-template-areas: 
+    "bloom"
+    "ana"
+    "zabo";
+}
+
+.latest-deals h3{
+    font-size: 2rem;
+}
+.latest-deals-content h4{
+    font-size: 1.5rem;
+}
+
+
+
+
 
 
 

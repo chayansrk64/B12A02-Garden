@@ -217,9 +217,50 @@ nav ul li:first-child{
     grid-area: ana;
 }
 
+/* subscribe section */
+.subscribe{
+    background-image: url('../assets/news-letter-bg.png');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 533px;
+}
+.subscribe h3{
+    color: white;
+    font-size: 3rem;
+}
 
-
-
+form{
+    display: flex;
+    width: 830px;
+    margin: 0 auto; 
+}
+input[type="text"]{
+    flex: 1;
+    height: 50px;
+    padding: 0 15px;
+    border: none;
+    font-size: 1rem;
+    outline:none;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+input[type="submit"]{
+    width: 164px;
+    height: 50px;
+    background-color: var(--primary-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+}
+input[type="submit"]:hover {
+  background-color: #d44d00;
+}
 
 
 
@@ -327,6 +368,22 @@ nav ul li:first-child{
     font-size: 1.5rem;
 }
 
+
+/* newsletter section */
+
+.subscribe{
+    height: 376px;
+}
+.subscribe h3{
+    color: white;
+    font-size: 1.5rem;
+}
+form{
+    width: 90%;
+}
+input[type="text"]{
+    flex: 0;
+}
 
 
 

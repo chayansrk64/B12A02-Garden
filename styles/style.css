@@ -1,3 +1,13 @@
+ /* font */
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+};
+
 *{
     margin: 0;
     padding: 0;
@@ -15,26 +25,33 @@ body{
 }
 
 
+
+
 /* shared classes */
 .section{
     max-width: 1140px;
     margin: 0 auto;
-    margin-bottom: 120px;
+    margin-bottom: 7rem;
 }
-
-
+p{
+    color: var(--paragraph);
+    font-size: 1.2rem;
+}
 
 
 /* header section */
 nav{
     margin-top: 2rem;
+    margin-bottom: 7rem;
 }
 nav ul{
     display: flex;
     justify-content: flex-end;
     align-items: center;
     list-style: none;
-    border: 1px solid red;
+}
+ul{
+    padding-inline-start: 0;
 }
 ul li{
     margin-left: 3rem;
@@ -47,6 +64,23 @@ ul li a{
 nav ul li:first-child{
     margin-right:auto ;
     margin-left: 0;
+   
+}
+
+/* banner */
+.banner{
+    display: flex;
+    align-items: flex-end;
+    min-height: 460px;
+}
+.heading h1{
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.highlight{
+    color: var(--primary-color);
 }
 
 
@@ -58,9 +92,17 @@ nav ul li:first-child{
 
 
 
-/* ============ RESPONSIVE DESIGN =========== */
+/* ============ RESPONSIVE DESIGN ============ */
 
 @media screen and (max-width: 576px) {
+
+
+    p{
+        font-size: 1rem;
+    }
+     
+    /* navigation */
+
     nav ul li:not(:first-child, :last-child){
         display: none;
     }
@@ -81,9 +123,22 @@ nav ul li:first-child{
     nav{
         margin-top: .8rem;
     }
-    .section{
-     margin-bottom: 40px;
+    
+    /* banner */
+    .banner{
+        flex-direction: column-reverse;
+        width: 95%;
     }
+    .heading h1{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .banner-image img{
+        width: 100%;
+    }
+    
+
+
     
 }
 

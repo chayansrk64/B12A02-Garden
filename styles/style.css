@@ -265,6 +265,7 @@ nav ul li:first-child{
 .subscribe h3{
     color: white;
     font-size: 3rem;
+    margin-top: 0rem;
 }
 
 form{

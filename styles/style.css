@@ -47,8 +47,28 @@ p{
     width: 100%;
     border: none;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
 }
-
+.btn-primary::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    background-color: #f1691a;
+    top: 0;
+    left: 0;
+    transition: width .25s linear;
+     z-index: -1;
+}
+.btn-primary:hover::after{
+    width: 100%;
+}
+.btn-primary:hover{
+    color: white;
+     
+}
 
 /* header section */
 nav{

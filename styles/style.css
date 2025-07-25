@@ -127,11 +127,11 @@ nav ul li:first-child{
 }
 .card{
     text-align: center;
-  
 }
 .card img{
     width: 100%;
 }
+
 .card h4{
     font-size: 1.4rem;
     margin-block-start: 0.5rem;

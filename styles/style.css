@@ -142,7 +142,9 @@ nav ul li:first-child{
     width: 286px;
     top: -116px;
     left: 385px;
+    animation: spin 5s linear infinite;
 }
+
 .flower-plants-container{
     display: flex;
     align-items: center;
@@ -155,6 +157,17 @@ nav ul li:first-child{
 .flower-plants-container div h3{
     font-size: 3rem;
 }
+
+@keyframes spin {
+    form{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
 
 /* latest-deals-section */
 .latest-deals h3{
@@ -275,6 +288,7 @@ footer{
     position: relative;
     top: 10%;
 }
+
 .footer-links{
     display: flex;
    justify-content: space-between;
@@ -419,13 +433,12 @@ form{
     width: 90%;
 }
 input[type="text"]{
-    flex: 0;
+    flex: 1;
 }
 
 /* footer */
 footer{
     grid-template-columns: repeat(1, 1fr);
-    padding-left: 2rem;
 }
 
 .footer-links{
@@ -439,6 +452,9 @@ footer{
     margin-left: 0;
     margin-right: 1.6rem;
 }
+
+
+
 
     
 }
